@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView android:text="Basic Keyboard with Android and Arduino" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="DO"
+        android:id="@+id/c"
+        android:layout_alignTop="@+id/d"
+        android:layout_toStartOf="@+id/ds" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="RE"
+        android:id="@+id/d"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="MI"
+        android:id="@+id/e"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/d" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="FA"
+        android:id="@+id/f"
+        android:layout_alignTop="@+id/e"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="SOL"
+        android:id="@+id/g"
+        android:layout_below="@+id/fs"
+        android:layout_toEndOf="@+id/f" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="LA"
+        android:id="@+id/a"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/g" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="SI"
+        android:id="@+id/b"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/a" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="DO#"
+        android:id="@+id/cs"
+        android:layout_above="@+id/c"
+        android:layout_alignEnd="@+id/d"
+        android:layout_marginEnd="39dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="RE#"
+        android:id="@+id/ds"
+        android:layout_above="@+id/d"
+        android:layout_alignStart="@+id/d"
+        android:layout_marginStart="35dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="FA#"
+        android:id="@+id/fs"
+        android:layout_above="@+id/f"
+        android:layout_alignEnd="@+id/g"
+        android:layout_marginEnd="42dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="SOL#"
+        android:id="@+id/gs"
+        android:layout_marginStart="30dp"
+        android:layout_above="@+id/g"
+        android:layout_alignStart="@+id/g" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="LA#"
+        android:id="@+id/as"
+        android:layout_above="@+id/a"
+        android:layout_toEndOf="@+id/gs" />
+
+</RelativeLayout>

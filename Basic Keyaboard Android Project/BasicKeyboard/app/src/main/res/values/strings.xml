@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Basic Keyboard</string>
+    <string name="action_scan">Start scan</string>
+</resources>
